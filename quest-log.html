@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="QuestLog route selector linking each quest to its own page." />
+    <title>QuestLog | Quest Log</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">QuestLog</a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="map.html">World Map</a>
+          <a href="quest-log.html" aria-current="page">Quest Log</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="section">
+      <div class="container">
+        <h1>Quest Log Route Selector</h1>
+        <p class="lead">Select a quest route to open its own checklist page.</p>
+
+        <section class="quest-log-grid" aria-label="Quest route cards">
+          <article class="log-card">
+            <h2>Emerald Basin</h2>
+            <p>Wetland scouting and beacon recovery.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-low">Risk: Low</span>
+            </div>
+            <a class="btn btn-primary" href="quest-emerald.html">Select Route</a>
+          </article>
+
+          <article class="log-card">
+            <h2>Obsidian Dunes</h2>
+            <p>Heat endurance and wind corridor mapping.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-medium">Risk: Medium</span>
+            </div>
+            <a class="btn btn-primary" href="quest-dunes.html">Select Route</a>
+          </article>
+
+          <article class="log-card">
+            <h2>Sapphire Reef</h2>
+            <p>Tide-cycle route and coastal calibration.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-medium">Risk: Medium</span>
+            </div>
+            <a class="btn btn-primary" href="quest-reef.html">Select Route</a>
+          </article>
+
+          <article class="log-card">
+            <h2>Copper Canyon</h2>
+            <p>Elevation checks and alternate path verification.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-high">Risk: High</span>
+            </div>
+            <a class="btn btn-primary" href="quest-canyon.html">Select Route</a>
+          </article>
+
+          <article class="log-card locked">
+            <h2>Crystal Peaks</h2>
+            <p>Final route shown for atmosphere.</p>
+            <span>Locked</span>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="landmark-footer">
+      <p class="sr-only">QuestLog footer landmark</p>
+    </footer>
+  </body>
+</html>

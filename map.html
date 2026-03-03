@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="QuestLog world map with locations linked to quest pages." />
+    <title>QuestLog | World Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">QuestLog</a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="map.html" aria-current="page">World Map</a>
+          <a href="quest-log.html">Quest Log</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="section">
+      <div class="container">
+        <h1>World Map</h1>
+        <p class="lead">Pick a location to enter its quest page and complete checklist markers.</p>
+
+        <section class="map-grid" aria-label="World map territories">
+          <article class="region-card emerald unlocked">
+            <h2>Emerald Basin</h2>
+            <p>Wetlands scouting route.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-low">Risk: Low</span>
+            </div>
+            <a href="quest-emerald.html">Enter route</a>
+          </article>
+
+          <article class="region-card dunes unlocked">
+            <h2>Obsidian Dunes</h2>
+            <p>Heat endurance route.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-medium">Risk: Medium</span>
+            </div>
+            <a href="quest-dunes.html">Enter route</a>
+          </article>
+
+          <article class="region-card reef unlocked">
+            <h2>Sapphire Reef</h2>
+            <p>Coastal survey route.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-medium">Risk: Medium</span>
+            </div>
+            <a href="quest-reef.html">Enter route</a>
+          </article>
+
+          <article class="region-card canyon unlocked">
+            <h2>Copper Canyon</h2>
+            <p>Cliffside chain route.</p>
+            <div class="route-meta">
+              <span class="risk-badge risk-high">Risk: High</span>
+            </div>
+            <a href="quest-canyon.html">Enter route</a>
+          </article>
+
+          <article class="region-card peaks locked" aria-label="Crystal Peaks locked route">
+            <h2>Crystal Peaks</h2>
+            <p>Final route shown for atmosphere.</p>
+            <span>Locked</span>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="landmark-footer">
+      <p class="sr-only">QuestLog footer landmark</p>
+    </footer>
+  </body>
+</html>

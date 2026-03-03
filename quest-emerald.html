@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Emerald Basin quest page with checklist checkpoints." />
+    <title>QuestLog | Emerald Basin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">QuestLog</a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="map.html">World Map</a>
+          <a href="quest-log.html">Quest Log</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="section">
+      <section class="container quest-page" aria-label="Emerald Basin checklist">
+        <h1>Quest: Emerald Basin</h1>
+        <p class="lead">Mark each checkpoint as you complete it.</p>
+        <div class="route-meta">
+          <span class="risk-badge risk-low">Risk: Low</span>
+        </div>
+        <aside class="safety-callout" aria-label="Emerald Basin safety guidance">
+          <h2>Safety Notice</h2>
+          <ul>
+            <li>Carry waterproof gear and stay on marked paths.</li>
+            <li>If river levels rise, pause and return to map route planning.</li>
+          </ul>
+        </aside>
+
+        <ul class="checkpoints checklist-only">
+          <li>
+            <label><input type="checkbox" /> Establish base at moss bridge</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Record tide-line coordinates</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Recover beacon shard</label>
+          </li>
+        </ul>
+
+        <a class="btn btn-ghost" href="quest-log.html">Back to Quest Log</a>
+      </section>
+    </main>
+
+    <footer class="landmark-footer">
+      <p class="sr-only">QuestLog footer landmark</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Copper Canyon quest page with checklist checkpoints." />
+    <title>QuestLog | Copper Canyon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">QuestLog</a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="map.html">World Map</a>
+          <a href="quest-log.html">Quest Log</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="section">
+      <section class="container quest-page" aria-label="Copper Canyon checklist">
+        <h1>Quest: Copper Canyon</h1>
+        <p class="lead">Mark each checkpoint as you complete it.</p>
+        <div class="route-meta">
+          <span class="risk-badge risk-high">Risk: High</span>
+        </div>
+        <aside class="safety-callout" aria-label="Copper Canyon safety guidance">
+          <h2>Safety Notice</h2>
+          <ul>
+            <li>Confirm anchor stability before traversing cliff edges.</li>
+            <li>Use the emergency return path if visibility or footing degrades.</li>
+          </ul>
+        </aside>
+
+        <ul class="checkpoints checklist-only">
+          <li>
+            <label><input type="checkbox" /> Secure cliff anchor points</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Validate return route safely</label>
+          </li>
+        </ul>
+
+        <a class="btn btn-ghost" href="quest-log.html">Back to Quest Log</a>
+      </section>
+    </main>
+
+    <footer class="landmark-footer">
+      <p class="sr-only">QuestLog footer landmark</p>
+    </footer>
+  </body>
+</html>

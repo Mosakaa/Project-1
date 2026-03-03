@@ -1,19 +1,82 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-<head>
-   <title>Playing cards</title>
-   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <div class="table">
-      <div class="card card-top card-black">A
-         <span class="spade top-left">&#9824;</span>
-         <span class="spade bottom-right">&#9824;</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="QuestLog home page for the Quest Explorer Adventure Pack project." />
+    <title>QuestLog | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">QuestLog</a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="map.html">World Map</a>
+          <a href="quest-log.html">Quest Log</a>
+          <a href="team.html">Team</a>
+        </nav>
       </div>
-      <div class="card card-bottom card-red">5
-         <span class="heart top-left">&#10084;</span>
-         <span class="heart bottom-right">&#10084;</span>
-      </div>
-   </div>
-</body>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Quest Explorer Track | Adventure Pack</p>
+            <h1>Select a route and complete checkpoints quest by quest.</h1>
+            <p class="lead">
+              Start from the World Map or Quest Log. Each quest has its own page with a checklist
+              you can mark as you progress.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="map.html">Open World Map</a>
+              <a class="btn btn-ghost" href="quest-log.html">Open Quest Log</a>
+            </div>
+          </div>
+          <article class="season-panel" aria-label="Current season details">
+            <h2>Season 01: Atlas Reawakens</h2>
+            <p>Navigate routes, check objectives, and complete the adventure log.</p>
+            <ul>
+              <li><strong>Current objective:</strong> Finish active route checklists.</li>
+              <li><strong>Flow:</strong> Choose route -> complete markers -> return to map.</li>
+              <li><strong>Mode:</strong> Scout and survey.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Featured Routes</h2>
+          <div class="quest-row">
+            <article class="quest-card unlocked">
+              <h3>Emerald Basin</h3>
+              <p>Lush route with river crossings and reconnaissance checkpoints.</p>
+              <a href="quest-emerald.html">Select route</a>
+            </article>
+            <article class="quest-card unlocked">
+              <h3>Obsidian Dunes</h3>
+              <p>Heat management and waypoint sprint across the dune perimeter.</p>
+              <a href="quest-dunes.html">Select route</a>
+            </article>
+            <article class="quest-card locked">
+              <h3>Crystal Peaks</h3>
+              <p>Final route (locked for aesthetic theme).</p>
+              <span>Locked</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landmark-footer">
+      <p class="sr-only">QuestLog footer landmark</p>
+    </footer>
+  </body>
 </html>
