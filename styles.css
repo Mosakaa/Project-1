@@ -302,6 +302,81 @@ h1 {
   gap: 0.8rem;
 }
 
+.world-map-bg {
+  border-radius: 18px;
+  padding: 1rem;
+  background:
+    linear-gradient(rgba(247, 249, 245, 0.72), rgba(247, 249, 245, 0.72)),
+    url('assets/world-map-custom.svg') center / cover no-repeat;
+  border: 1px solid #d7e1d4;
+}
+
+.world-map-canvas {
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #d7e1d4;
+  box-shadow: var(--shadow);
+}
+
+.world-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map-label {
+  position: absolute;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #122814;
+  background: rgba(248, 252, 246, 0.9);
+  border: 1px solid #c2d5bf;
+  border-radius: 999px;
+  padding: 0.28rem 0.62rem;
+  box-shadow: 0 6px 16px rgba(23, 58, 27, 0.16);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.map-label:hover {
+  transform: translateY(-2px);
+  background: #f1f8ed;
+}
+
+.map-label:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 2px;
+}
+
+.emerald-point {
+  left: 18%;
+  top: 28%;
+}
+
+.dunes-point {
+  left: 74%;
+  top: 34%;
+}
+
+.reef-point {
+  left: 60%;
+  top: 57%;
+}
+
+.canyon-point {
+  left: 33%;
+  top: 61%;
+}
+
+.locked-point {
+  left: 45%;
+  top: 24%;
+  background: rgba(242, 238, 226, 0.92);
+  color: #6a4b16;
+}
+
 .region-card {
   border-radius: 14px;
   background: var(--card);
@@ -446,6 +521,11 @@ h1 {
   .reef,
   .canyon {
     grid-column: span 12;
+  }
+
+  .map-label {
+    font-size: 0.75rem;
+    padding: 0.22rem 0.5rem;
   }
 }
 

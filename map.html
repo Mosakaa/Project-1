@@ -27,50 +27,18 @@
     <main id="main-content" class="section">
       <div class="container">
         <h1>World Map</h1>
-        <p class="lead">Pick a location to enter its quest page and complete checklist markers.</p>
+        <section class="world-map-canvas" aria-label="Interactive world map">
+          <img
+            src="assets/c2b4884b-c678-42ab-b5dd-70e5ac50a479.png"
+            alt="QuestLog world map background"
+            class="world-map-image"
+          />
 
-        <section class="map-grid" aria-label="World map territories">
-          <article class="region-card emerald unlocked">
-            <h2>Emerald Basin</h2>
-            <p>Wetlands scouting route.</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-low">Risk: Low</span>
-            </div>
-            <a href="quest-emerald.html">Enter route</a>
-          </article>
-
-          <article class="region-card dunes unlocked">
-            <h2>Obsidian Dunes</h2>
-            <p>Heat endurance route.</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-medium">Risk: Medium</span>
-            </div>
-            <a href="quest-dunes.html">Enter route</a>
-          </article>
-
-          <article class="region-card reef unlocked">
-            <h2>Sapphire Reef</h2>
-            <p>Coastal survey route.</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-medium">Risk: Medium</span>
-            </div>
-            <a href="quest-reef.html">Enter route</a>
-          </article>
-
-          <article class="region-card canyon unlocked">
-            <h2>Copper Canyon</h2>
-            <p>Cliffside chain route.</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-high">Risk: High</span>
-            </div>
-            <a href="quest-canyon.html">Enter route</a>
-          </article>
-
-          <article class="region-card peaks locked" aria-label="Crystal Peaks locked route">
-            <h2>Crystal Peaks</h2>
-            <p>Final route shown for atmosphere.</p>
-            <span>Locked</span>
-          </article>
+          <a class="map-label emerald-point" href="quest-emerald.html">Emerald Basin</a>
+          <a class="map-label dunes-point" href="quest-dunes.html">Obsidian Dunes</a>
+          <a class="map-label reef-point" href="quest-reef.html">Sapphire Reef</a>
+          <a class="map-label canyon-point" href="quest-canyon.html">Copper Canyon</a>
+          <span class="map-label locked-point" aria-label="Crystal Peaks route locked">Crystal Peaks (Locked)</span>
         </section>
       </div>
     </main>
