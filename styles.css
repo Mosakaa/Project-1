@@ -444,6 +444,59 @@ h1 {
   opacity: 0.8;
 }
 
+.log-ops-banner {
+  margin: 1rem 0 1.15rem;
+  border: 1px solid #d7e1d4;
+  border-left: 5px solid var(--forest);
+  border-radius: 14px;
+  background: #f5f9f2;
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.log-ops-banner p {
+  margin: 0;
+}
+
+.status-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.status-active {
+  background: #dff3df;
+  color: #1f5f21;
+}
+
+.status-queued {
+  background: #e6f0fb;
+  color: #1f4f81;
+}
+
+.status-review {
+  background: #fde4c8;
+  color: #8a4700;
+}
+
+.status-locked {
+  background: #ece9e1;
+  color: #6a4b16;
+}
+
+.log-note {
+  margin: 0.25rem 0 0;
+  color: #364634;
+}
+
 .quest-page {
   max-width: 760px;
 }
@@ -526,6 +579,10 @@ h1 {
   .map-label {
     font-size: 0.75rem;
     padding: 0.22rem 0.5rem;
+  }
+
+  .log-ops-banner {
+    align-items: flex-start;
   }
 }
 
