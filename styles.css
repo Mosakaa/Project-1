@@ -258,8 +258,7 @@ h1 {
   transform: scale(1.03);
 }
 
-.quest-card a:focus-visible,
-.region-card a:focus-visible {
+.quest-card a:focus-visible {
   border-radius: 8px;
   background: #e6f0e3;
 }
@@ -269,8 +268,7 @@ h1 {
   opacity: 0.8;
 }
 
-.quest-card.locked span,
-.region-card span {
+.quest-card.locked span {
   display: inline-block;
   background: #ebebeb;
   border-radius: 999px;
@@ -341,22 +339,6 @@ h1 {
 .safety-inline strong {
   display: inline-block;
   margin-bottom: 0.25rem;
-}
-
-.map-grid {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 0.8rem;
-}
-
-.world-map-bg {
-  border-radius: 18px;
-  padding: 1rem;
-  background:
-    linear-gradient(rgba(247, 249, 245, 0.72), rgba(247, 249, 245, 0.72)),
-    url('assets/world-map-custom.svg') center / cover no-repeat;
-  border: 1px solid #d7e1d4;
 }
 
 .world-map-canvas {
@@ -440,51 +422,6 @@ h1 {
   top: 24%;
   background: rgba(242, 238, 226, 0.92);
   color: #6a4b16;
-}
-
-.region-card {
-  border-radius: 14px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  padding: 0.95rem;
-  min-height: 150px;
-  box-shadow: var(--shadow);
-  transition: transform 0.25s ease, filter 0.25s ease;
-  animation: rise-in 0.5s ease both;
-}
-
-.region-card:hover,
-.region-card:focus-within {
-  transform: scale(1.03);
-}
-
-.region-card.locked {
-  filter: grayscale(0.95);
-  opacity: 0.75;
-}
-
-.emerald {
-  grid-column: span 5;
-  background: linear-gradient(150deg, #f5fbef, #e3f0d9);
-}
-
-.dunes {
-  grid-column: span 4;
-  background: linear-gradient(150deg, #f7f0df, #edd8b3);
-}
-
-.peaks {
-  grid-column: span 3;
-}
-
-.reef {
-  grid-column: span 6;
-  background: linear-gradient(150deg, #e6f5f7, #cde9f1);
-}
-
-.canyon {
-  grid-column: span 6;
-  background: linear-gradient(150deg, #f8ede2, #eed3b8);
 }
 
 .quest-log-grid,
@@ -690,14 +627,6 @@ h1 {
 @media (max-width: 880px) {
   .hero-grid {
     grid-template-columns: 1fr;
-  }
-
-  .emerald,
-  .dunes,
-  .peaks,
-  .reef,
-  .canyon {
-    grid-column: span 12;
   }
 
   .map-label {

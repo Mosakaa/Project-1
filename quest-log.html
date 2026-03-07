@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="QuestLog route selector linking each quest to its own page."
-    />
+    <meta name="description" content="QuestLog mission control dashboard with route statuses and launch policy." />
     <title>QuestLog | Quest Log</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,14 +32,11 @@
     <main id="main-content" class="section">
       <div class="container">
         <h1>Quest Log</h1>
-        <p class="lead">
-          Mission status overview. Quest entry is managed from the World Map
-          only.
-        </p>
+        <p class="lead">Mission status dashboard. Launch quests from the World Map only.</p>
 
         <section class="log-ops-banner" aria-label="Quest launch policy">
           <p>
-            <strong>Launch Rule:</strong> Go to the World Map to launch quests.
+            <strong>Launch Rule:</strong> Use the World Map for all quest entry.
           </p>
           <a class="btn btn-primary" href="map.html">Open World Map</a>
         </section>
@@ -55,9 +49,7 @@
               <span class="risk-badge risk-low">Risk: Low</span>
               <span class="status-badge status-active">Status: Active</span>
             </div>
-            <p class="log-note">
-              Primary objective: establish base and recover beacon shard.
-            </p>
+            <p class="log-note">Objective: establish base and recover beacon shard.</p>
           </article>
 
           <article class="log-card">
@@ -67,9 +59,7 @@
               <span class="risk-badge risk-medium">Risk: Medium</span>
               <span class="status-badge status-queued">Status: Queued</span>
             </div>
-            <p class="log-note">
-              Recommended after Emerald Basin due to weather volatility.
-            </p>
+            <p class="log-note">Recommended after Emerald Basin.</p>
           </article>
 
           <article class="log-card">
@@ -79,9 +69,7 @@
               <span class="risk-badge risk-medium">Risk: Medium</span>
               <span class="status-badge status-queued">Status: Queued</span>
             </div>
-            <p class="log-note">
-              Requires tide-window timing and coastal visibility checks.
-            </p>
+            <p class="log-note">Requires tide-window timing and visibility checks.</p>
           </article>
 
           <article class="log-card">
@@ -91,9 +79,7 @@
               <span class="risk-badge risk-high">Risk: High</span>
               <span class="status-badge status-review">Status: High Alert</span>
             </div>
-            <p class="log-note">
-              Attempt only after all medium-risk routes are stabilized.
-            </p>
+            <p class="log-note">Attempt after medium-risk routes are stabilized.</p>
           </article>
 
           <article class="log-card locked">
@@ -103,9 +89,7 @@
               <span class="risk-badge risk-high">Risk: Restricted</span>
               <span class="status-badge status-locked">Status: Locked</span>
             </div>
-            <p class="log-note">
-              Locked until earlier route checkpoints are cleared.
-            </p>
+            <p class="log-note">Locked until earlier checkpoints are cleared.</p>
           </article>
         </section>
       </div>
