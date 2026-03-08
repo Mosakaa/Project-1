@@ -584,7 +584,14 @@ h1 {
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, filter 0.25s ease;
   padding: 20px;
+  gap:2%;
 }
+
+.chat > h3{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 
 .chat:hover{
   transform: scale(1.03);
