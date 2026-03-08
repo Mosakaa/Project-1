@@ -637,6 +637,7 @@ h1 {
 }
 
 .chatsubmitbutton{
+  border-radius: 999px;
 }
 
 @keyframes rise-in {
