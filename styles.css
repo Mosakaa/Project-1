@@ -622,6 +622,8 @@ h1 {
 }
 
 .entrybox{
+  position: relative;
+  left: 2%;
   display: flex;
   flex-direction: row;
   margin-top: auto;
@@ -629,7 +631,9 @@ h1 {
 }
 
 .chatinputbox{
-  border-radius: 6px;
+  border-radius: 14px;
+  height: 2rem;
+  
 }
 
 .chatinputbox:focus{
