@@ -577,7 +577,7 @@ h1 {
   right: 5%;
   bottom: 5%;
   background: whitesmoke;
-  border-radius: 14px;
+  border-radius: 34px;
   width: 15rem;
   height: 20rem;
   align-items: center;
@@ -588,6 +588,47 @@ h1 {
 
 .chat:hover{
   transform: scale(1.03);
+}
+
+.chatbox{
+  border: black solid 1px;
+  border-radius: 14px;
+  flex-grow: 2;
+  margin-bottom: 4%;
+  padding: 5px;
+}
+
+.chatname > p{
+  position: relative;
+  font-size: 12px;
+  margin-bottom: auto;
+  margin-left: 2%;
+}
+
+.chatbubble{
+  font-size: 10px;
+  background-color: grey;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 14px;
+  max-width: 80%;
+  box-shadow: var(--shadow);
+}
+
+.chatbubble > p {
+  color: white;
+}
+
+.entrybox{
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+.chatinputbox{
+  border-radius: 6px;
 }
 
 
