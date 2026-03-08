@@ -564,6 +564,33 @@ h1 {
   border: 0;
 }
 
+.chatcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 5%;
+  bottom: 5%;
+  background: whitesmoke;
+  border-radius: 14px;
+  width: 15rem;
+  height: 20rem;
+  align-items: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, filter 0.25s ease;
+  padding: 20px;
+}
+
+.chat:hover{
+  transform: scale(1.03);
+}
+
+
 @keyframes rise-in {
   from {
     opacity: 0;
