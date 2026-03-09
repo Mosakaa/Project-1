@@ -564,92 +564,163 @@ h1 {
   border: 0;
 }
 
-.chatcontainer{
+.assistant-section {
+  padding-top: 1.3rem;
+}
+
+.assistant-shell {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.intent-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 0.9rem;
+}
+
+.intent-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.9rem;
+  box-shadow: var(--shadow);
+  animation: rise-in 0.4s ease both;
+}
+
+.intent-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.intent-card p {
+  margin: 0 0 0.5rem;
+}
+
+.intent-meta {
+  font-size: 0.84rem;
+  color: #304730;
+  background: #edf5ea;
+  border: 1px solid #d7e5d3;
+  border-radius: 10px;
+  padding: 0.32rem 0.45rem;
+}
+
+.assistant-panel {
+  background: #f8fbf4;
+  border: 1px solid #d3dfd0;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.assistant-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  padding: 0.85rem 0.95rem;
+  border-bottom: 1px solid #dce7d9;
+  background: linear-gradient(180deg, #f3f8ef 0%, #edf5e9 100%);
 }
 
-.chat{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 5%;
-  bottom: 5%;
-  background: whitesmoke;
-  border-radius: 34px;
-  width: 15rem;
-  height: 20rem;
-  align-items: center;
-  box-shadow: var(--shadow);
-  transition: transform 0.25s ease, filter 0.25s ease;
-  padding: 20px;
-  gap:2%;
+.assistant-header h3 {
+  margin: 0;
+  font-size: 1.04rem;
 }
 
-.chat > h3{
-  margin-top: auto;
-  margin-bottom: auto;
+.assistant-header p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
 }
 
-
-.chat:hover{
-  transform: scale(1.03);
-}
-
-.chatbox{
-  border: black solid 1px;
-  border-radius: 14px;
-  flex-grow: 2;
-  margin-bottom: 4%;
-  padding: 5px;
-}
-
-.chatname > p{
-  position: relative;
-  font-size: 12px;
-  margin-bottom: auto;
-  margin-left: 2%;
-}
-
-.chatbubble{
-  font-size: 10px;
-  background-color: grey;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border-radius: 14px;
-  max-width: 80%;
-  box-shadow: var(--shadow);
-}
-
-.chatbubble > p {
-  color: white;
-}
-
-.entrybox{
-  position: relative;
-  left: 2%;
-  display: flex;
-  flex-direction: row;
-  margin-top: auto;
-  gap: 2%;
-}
-
-.chatinputbox{
-  border-radius: 14px;
-  height: 2rem;
-  
-}
-
-.chatinputbox:focus{
-  outline: none;
-}
-
-.chatsubmitbutton{
+.assistant-chip {
+  background: var(--forest);
+  color: #f8f8f5;
   border-radius: 999px;
+  padding: 0.24rem 0.58rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
+
+.assistant-thread {
+  padding: 0.9rem;
+  display: grid;
+  gap: 0.7rem;
+  background: #f4f9f0;
+}
+
+.message {
+  border-radius: 12px;
+  padding: 0.72rem 0.78rem;
+  border: 1px solid #d5e2d2;
+}
+
+.message h4 {
+  margin: 0 0 0.38rem;
+  font-size: 0.94rem;
+}
+
+.message p,
+.message ul {
+  margin: 0;
+}
+
+.message ul {
+  padding-left: 1.05rem;
+}
+
+.message li {
+  margin-bottom: 0.28rem;
+}
+
+.message-user {
+  background: #eaf3e8;
+}
+
+.message-ai {
+  background: #ffffff;
+}
+
+.template-tag {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  background: #ecf2fc;
+  color: #1f4f81;
+  border-radius: 999px;
+  padding: 0.14rem 0.54rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.assistant-compose {
+  border-top: 1px solid #dce7d9;
+  padding: 0.75rem 0.9rem 0.95rem;
+}
+
+.assistant-compose label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+}
+
+.assistant-compose input {
+  width: 100%;
+  border: 1px solid #c9d8c4;
+  border-radius: 10px;
+  padding: 0.5rem 0.6rem;
+  font: inherit;
+  background: #fefefe;
+  color: #223122;
+}
+
 
 @keyframes rise-in {
   from {
@@ -713,6 +784,14 @@ h1 {
 
 @media (max-width: 880px) {
   .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assistant-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .intent-grid {
     grid-template-columns: 1fr;
   }
 

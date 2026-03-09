@@ -1,118 +1,251 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="QuestLog home with route overview and quest access."
+    />
+    <title>QuestLog | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="QuestLog home with route overview and quest access." />
-  <title>QuestLog | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Manrope:wght@400;600;700&amp;display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <input
+      type="checkbox"
+      id="reduce-motion-toggle"
+      class="motion-toggle-input"
+    />
+    <label for="reduce-motion-toggle" class="motion-toggle-label"
+      >Reduce Motion</label
+    >
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">QuestLog</a>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="map.html">World Map</a>
+          <a href="quest-log.html">Quest Log</a>
+          <a href="team.html">Team</a>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <input type="checkbox" id="reduce-motion-toggle" class="motion-toggle-input" />
-  <label for="reduce-motion-toggle" class="motion-toggle-label">Reduce Motion</label>
-  <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand" href="index.html">QuestLog</a>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="map.html">World Map</a>
-        <a href="quest-log.html">Quest Log</a>
-        <a href="team.html">Team</a>
-      </nav>
-    </div>
-  </header>
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Quest Explorer Track | Adventure Pack</p>
+            <h1>Choose a route. Clear checkpoints.</h1>
+            <p class="lead">
+              Launch from the World Map, then track mission status in Quest Log.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="map.html">Open World Map</a>
+              <a class="btn btn-ghost" href="quest-log.html">Open Quest Log</a>
+            </div>
+          </div>
+          <article class="season-panel" aria-label="Current season details">
+            <h2>Season 01: Atlas Reawakens</h2>
+            <p>Track route progress and mission objectives.</p>
+            <ul>
+              <li>
+                <strong>Objective:</strong> Clear active route checkpoints.
+              </li>
+              <li>
+                <strong>Flow:</strong> Choose route -> complete checkpoints ->
+                return.
+              </li>
+              <li><strong>Mode:</strong> Scout and survey</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <main id="main-content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Quest Explorer Track | Adventure Pack</p>
-          <h1>Choose a route. Clear checkpoints.</h1>
-          <p class="lead">
-            Launch from the World Map, then track mission status in Quest Log.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="map.html">Open World Map</a>
-            <a class="btn btn-ghost" href="quest-log.html">Open Quest Log</a>
+      <section class="section">
+        <div class="container">
+          <h2>Featured Routes</h2>
+          <div class="quest-row">
+            <article class="quest-card">
+              <h3>Emerald Basin</h3>
+              <p>
+                Lush route with river crossings and reconnaissance checkpoints.
+              </p>
+              <div class="route-meta">
+                <span class="risk-badge risk-low">Risk: Low</span>
+              </div>
+              <a href="quest-emerald.html">Select route</a>
+            </article>
+            <article class="quest-card">
+              <h3>Obsidian Dunes</h3>
+              <p>
+                Heat management and waypoint sprint across the dune perimeter.
+              </p>
+              <div class="route-meta">
+                <span class="risk-badge risk-medium">Risk: Medium</span>
+              </div>
+              <a href="quest-dunes.html">Select route</a>
+            </article>
+            <article class="quest-card locked">
+              <h3>Crystal Peaks</h3>
+              <p>Final route (locked for aesthetic theme).</p>
+              <div class="route-meta">
+                <span class="risk-badge risk-high">Risk: Restricted</span>
+              </div>
+              <span>Locked</span>
+            </article>
           </div>
         </div>
-        <article class="season-panel" aria-label="Current season details">
-          <h2>Season 01: Atlas Reawakens</h2>
-          <p>Track route progress and mission objectives.</p>
-          <ul>
-            <li><strong>Objective:</strong> Clear active route checkpoints.</li>
-            <li><strong>Flow:</strong> Choose route -> complete checkpoints -> return.</li>
-            <li><strong>Mode:</strong> Scout and survey</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Featured Routes</h2>
-        <div class="quest-row">
-          <article class="quest-card">
-            <h3>Emerald Basin</h3>
-            <p>Lush route with river crossings and reconnaissance checkpoints.</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-low">Risk: Low</span>
-            </div>
-            <a href="quest-emerald.html">Select route</a>
-          </article>
-          <article class="quest-card">
-            <h3>Obsidian Dunes</h3>
-            <p>Heat management and waypoint sprint across the dune perimeter.</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-medium">Risk: Medium</span>
-            </div>
-            <a href="quest-dunes.html">Select route</a>
-          </article>
-          <article class="quest-card locked">
-            <h3>Crystal Peaks</h3>
-            <p>Final route (locked for aesthetic theme).</p>
-            <div class="route-meta">
-              <span class="risk-badge risk-high">Risk: Restricted</span>
-            </div>
-            <span>Locked</span>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section
+        class="section assistant-section"
+        aria-labelledby="assistant-heading"
+      >
+        <div class="container">
+          <div class="assistant-shell">
+            <div>
+              <h2 id="assistant-heading">AI Assistant Panel</h2>
+              <p class="lead">
+                Guided help interface with intent cards and structured response
+                templates.
+              </p>
 
-    <section class="section">
-      <div class="container">
-        <h2>Need Help?</h2>
-        <div class="chatcontainer">
-          <div class="chat">
-            <h3>Chat with us!</h3>
-            <div class="chatbox">
-              <div class="chatname"><p>Mike</p></div>
-              <div class="chatbubble">
-                <p>Hello! I am an AI assistant here to help you to complete your quest!</p>
+              <div
+                class="intent-grid"
+                role="list"
+                aria-label="Assistant intents"
+              >
+                <article class="intent-card" role="listitem">
+                  <h3>Route Planner</h3>
+                  <p>
+                    Suggest the next best quest based on risk level and
+                    progression order.
+                  </p>
+                  <p class="intent-meta">
+                    <strong>Intent:</strong> Recommend next route
+                  </p>
+                </article>
+                <article class="intent-card" role="listitem">
+                  <h3>Checklist Coach</h3>
+                  <p>
+                    Provide a step-by-step prep summary before opening a quest
+                    checklist.
+                  </p>
+                  <p class="intent-meta">
+                    <strong>Intent:</strong> Build prep checklist
+                  </p>
+                </article>
+                <article class="intent-card" role="listitem">
+                  <h3>Safety Advisor</h3>
+                  <p>
+                    Highlight risk notices and mitigation actions for the
+                    selected region.
+                  </p>
+                  <p class="intent-meta">
+                    <strong>Intent:</strong> Surface safety guidance
+                  </p>
+                </article>
+                <article class="intent-card" role="listitem">
+                  <h3>Progress Snapshot</h3>
+                  <p>
+                    Summarize active, queued, and locked mission states in plain
+                    language.
+                  </p>
+                  <p class="intent-meta">
+                    <strong>Intent:</strong> Explain mission status
+                  </p>
+                </article>
               </div>
             </div>
-            <div class="entrybox">
-              <input type="text" class="chatinputbox" placeholder="Enter your request here!">
-              <button type="submit" class="chatsubmitbutton">➤</button>
-            </div>
+
+            <aside
+              class="assistant-panel"
+              aria-label="AI assistant chat mockup"
+            >
+              <header class="assistant-header">
+                <div>
+                  <h3>QuestGuide Assistant</h3>
+                  <p>Demo mode: template responses</p>
+                </div>
+              </header>
+
+              <div class="assistant-thread" aria-live="polite">
+                <article class="message message-user">
+                  <h4>User Request</h4>
+                  <p>I just finished Emerald Basin. What should I do next?</p>
+                </article>
+
+                <article class="message message-ai">
+                  <h4>Template: Recommendation Response</h4>
+                  <p class="template-tag">Confidence: High</p>
+                  <ul>
+                    <li>
+                      <strong>Suggested next route:</strong> Obsidian Dunes
+                    </li>
+                    <li>
+                      <strong>Reason:</strong> Medium risk and natural
+                      progression from low-risk completion.
+                    </li>
+                    <li>
+                      <strong>Preparation:</strong> Confirm compass calibration
+                      and hydration kit.
+                    </li>
+                    <li>
+                      <strong>Where to start:</strong> Open World Map and select
+                      Obsidian Dunes.
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="message message-ai">
+                  <h4>Template: Safety Summary Response</h4>
+                  <p class="template-tag">Explainability: Enabled</p>
+                  <ul>
+                    <li>
+                      <strong>Signal used:</strong> Risk badge + route order
+                      from Quest Log.
+                    </li>
+                    <li>
+                      <strong>Mitigation:</strong> Reroute to nearest shelter on
+                      high-wind alerts.
+                    </li>
+                    <li>
+                      <strong>Reminder:</strong> Quest Log tracks status; launch
+                      is map-only.
+                    </li>
+                  </ul>
+                </article>
+              </div>
+
+              <div
+                class="assistant-compose"
+                aria-label="Assistant input preview"
+              >
+                <label for="assistant-input">Prompt Preview</label>
+                <input
+                  id="assistant-input"
+                  type="text"
+                  value="Recommend my next quest and show safety notes."
+                  readonly
+                />
+              </div>
+            </aside>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="landmark-footer">
-    <p class="sr-only">QuestLog footer landmark</p>
-  </footer>
-</body>
-
+    <footer class="landmark-footer">
+      <p class="sr-only">QuestLog footer landmark</p>
+    </footer>
+  </body>
 </html>
