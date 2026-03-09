@@ -580,6 +580,12 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(180px, 1fr));
   gap: 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+.intent-grid li {
+  margin: 0;
 }
 
 .intent-card {
