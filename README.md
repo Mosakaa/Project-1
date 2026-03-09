@@ -42,3 +42,8 @@ Users launch routes from the World Map, review mission status in Quest Log, and 
 
 - Quest launch is intentionally handled by `map.html`.
 - Quest Log is intentionally a status/management view.
+
+## Bonus Feature
+
+Created an example AI assistant intended to show what it could like for a user who might need some help navigating the map.
+Includes an input box, and a familiar interface so users immediately know what to do.
